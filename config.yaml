@@ -27,13 +27,13 @@ system:
 
 # mysql connect configuration
 mysql:
-  path: localhost:3306
+  path: 127.0.0.1:3306
   config: charset=utf8mb4&parseTime=True&loc=Local
   db-name: test
   username: root
   password: "123456"
-  max-idle-conns: 100
-  max-open-conns: 100
+  max-idle-conns: 3
+  max-open-conns: 3
   log-mode: true
   log-zap: ""
 
