@@ -3,6 +3,7 @@ package core
 import (
 	"content-grpc/global"
 	"content-grpc/utils"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"github.com/fsnotify/fsnotify"
@@ -12,6 +13,22 @@ import (
 
 func Viper(path ...string) *viper.Viper {
 	var config string
+	v := viper.New()
+
+	//先走consul 没有再走本地
+	v.AddRemoteProvider("consul", "127.0.0.1:8500", "go")
+	v.SetConfigType("json") // Need to explicitly set this to json
+	if err := v.ReadRemoteConfig(); err == nil {
+		if str, err := json.Marshal(v.AllSettings()); err != nil {
+			if err = json.Unmarshal([]byte(string(str)), &global.CONFIG); err != nil {
+				return v
+			}
+		}
+	}
+
+
+	v = viper.New()
+
 	if len(path) == 0 {
 		flag.StringVar(&config, "c", "", "choose config file.")
 		flag.Parse()
@@ -32,7 +49,6 @@ func Viper(path ...string) *viper.Viper {
 	}
 
 
-	v := viper.New()
 	v.SetConfigFile(config)
 	err := v.ReadInConfig()
 	if err != nil {
@@ -51,7 +67,10 @@ func Viper(path ...string) *viper.Viper {
 	if err := v.Unmarshal(&global.CONFIG); err != nil {
 		fmt.Println(err)
 	}
-
+	//
+	//fmt.Println(global.CONFIG.Mysql.Dbname, 666666)
+	//str, err := json.Marshal(v.AllSettings())
+	//fmt.Println(err, string(str))
 
 	return v
 }

@@ -22,7 +22,7 @@ func InitGrpcServer(port string) (server *grpc.Server) {
 	//注册路由
 	module.RegisterModule(server)
 
-	fmt.Println("grpc服务已启动")
+	fmt.Printf("grpc服务已启动 端口号：%s", port)
 
 	server.Serve(lis)
 

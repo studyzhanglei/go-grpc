@@ -7,4 +7,5 @@ type Server struct {
 	// gorm
 	Mysql Mysql `mapstructure:"mysql" json:"mysql" yaml:"mysql"`
 	GRPC      GRPC      `mapstructure:"grpc" json:"grpc" yaml:"grpc"`
+	Name string `json:"name"`
 }
