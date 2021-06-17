@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c357c35-70f4-486f-9087-0de3efc28e4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/grpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/grpc.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/viper.go" beforeDir="false" afterPath="$PROJECT_DIR$/core/viper.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/latest_log" beforeDir="false" afterPath="$PROJECT_DIR$/latest_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/2021-06-01.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/test/test.go" beforeDir="false" afterPath="$PROJECT_DIR$/module/test/test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pb/error/search/search.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/common/common.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/error/search.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pb/search/search.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/errors/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/errors/error.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,84 +24,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/test/test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-316">
-              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/gorm.io/gorm@v1.20.7/gorm.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pb/error/search.pb.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-484" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1023">
-              <caret line="171" column="1" lean-forward="true" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+            <state relative-caret-position="342">
+              <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
               <folding>
-                <element signature="e#14#255#0" expanded="true" />
+                <element signature="e#14#224#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.yaml">
+        <entry file="file://$PROJECT_DIR$/utils/errors/error.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/viper.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="69" selection-start-line="69" selection-end-line="72" selection-end-column="35" />
-              <folding>
-                <element signature="e#14#219#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/github.com/spf13/viper@v1.7.0/viper.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="1956" column="16" selection-start-line="1956" selection-start-column="16" selection-end-line="1956" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="-64">
+              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -134,6 +67,8 @@
       <find>&quot;s&quot;</find>
       <find>redigo</find>
       <find>go-redis</find>
+      <find>search.pro</find>
+      <find>zhang</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -174,10 +109,8 @@
         <option value="$PROJECT_DIR$/initialize/directory.go" />
         <option value="$PROJECT_DIR$/utils/directory.go" />
         <option value="$PROJECT_DIR$/utils/rotatelogs.go" />
-        <option value="$PROJECT_DIR$/utils/errors/error.go" />
         <option value="$PROJECT_DIR$/pb/search/search.pb.go" />
         <option value="$PROJECT_DIR$/config/auto_code.go" />
-        <option value="$PROJECT_DIR$/go.mod" />
         <option value="$PROJECT_DIR$/global/global.go" />
         <option value="$PROJECT_DIR$/config.yaml" />
         <option value="$PROJECT_DIR$/initialize/redis.go" />
@@ -187,8 +120,11 @@
         <option value="$PROJECT_DIR$/config/gorm.go" />
         <option value="$PROJECT_DIR$/test.yaml" />
         <option value="$PROJECT_DIR$/core/viper.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/github.com/studyzhanglei/grpc-proto@v0.0.2/pb/search/search.pb.go" />
+        <option value="$PROJECT_DIR$/go.mod" />
+        <option value="$PROJECT_DIR$/utils/errors/error.go" />
+        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/module/test/test.go" />
       </list>
     </option>
@@ -214,46 +150,11 @@
             <path>
               <item name="content-grpc" type="b2602c69:ProjectViewProjectNode" />
               <item name="content-grpc" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="content-grpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="content-grpc" type="462c0819:PsiDirectoryNode" />
-              <item name="pb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="content-grpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="content-grpc" type="462c0819:PsiDirectoryNode" />
-              <item name="pb" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="content-grpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="content-grpc" type="462c0819:PsiDirectoryNode" />
-              <item name="pb" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="content-grpc" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="content-grpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go Modules &lt;content-grpc&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="content-grpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go Modules &lt;content-grpc&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="viper@v1.7.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="content-grpc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go Modules &lt;content-grpc&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="viper@v1.7.0" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,14 +201,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="938" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15228967" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15548456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32938388" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -331,66 +231,10 @@
     <proxy>https://goproxy.cn,direct</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/directory.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="e#15#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/rotatelogs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding>
-            <element signature="e#35#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/zap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pb/search.pb.go" />
-    <entry file="file://$PROJECT_DIR$/log/2021-06-01.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/server_win.go" />
-    <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/github.com/go-redis/redis@v6.15.7+incompatible/command.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="577" column="22" selection-start-line="577" selection-start-column="22" selection-end-line="577" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pb/error/search/search.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/casbin.go" />
     <entry file="file://$PROJECT_DIR$/config/captcha.go" />
     <entry file="file://$PROJECT_DIR$/config/email.go" />
     <entry file="file://$PROJECT_DIR$/config/timer.go" />
     <entry file="file://$PROJECT_DIR$/config/auto_code.go" />
-    <entry file="file://$PROJECT_DIR$/model/a.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/zap.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -411,9 +255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/grpc.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/gorm.io/gorm@v1.20.7/finisher_api.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -431,24 +272,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/errors/error.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/Cellar/go/1.14.3/libexec/src/database/sql/sql.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12600">
           <caret line="853" column="69" selection-start-line="853" selection-start-column="19" selection-end-line="853" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/initialize/redis.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -475,16 +302,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="157" column="5" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pb/search/search.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="218" selection-start-line="218" selection-end-line="218" />
-          <folding>
-            <element signature="e#90#327#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,25 +357,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2021-06-08.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2021-06-08.log" />
     <entry file="file://$PROJECT_DIR$/log/2021-06-08.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/log/2021-06-09.log">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/github.com/mitchellh/mapstructure@v1.2.2/mapstructure.go">
       <provider selected="true" editor-type-id="text-editor">
@@ -591,32 +395,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pb/error/search.pb.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-484" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pb/error/search_error.pb.go" />
     <entry file="file://$PROJECT_DIR$/config.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="171" column="1" lean-forward="true" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#255#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -634,10 +417,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/zap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/directory.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="44" selection-end-line="48" />
+          <folding>
+            <element signature="e#15#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pb/search/search.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="39" column="52" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+          <folding>
+            <element signature="e#90#327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pb/common/common.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initialize/redis.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="e#20#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/grpc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/a.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/github.com/studyzhanglei/grpc-proto@v0.0.2/pb/common/common.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <folding>
+            <element signature="e#90#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/github.com/studyzhanglei/grpc-proto@v0.0.2/pb/error/search.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#89#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/github.com/studyzhanglei/grpc-proto@v0.0.2/pb/search/search.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/github.com/studyzhanglei/grpc-proto@v0.0.3/pb/common/common.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+          <folding>
+            <element signature="e#90#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/project/styd-docker-go/gopath/pkg/mod/github.com/studyzhanglei/grpc-proto@v0.0.3/pb/search/search.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#90#350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1924">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#14#250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.sum">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="404" column="21" selection-start-line="404" selection-start-column="16" selection-end-line="404" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/errors/error.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/test/test.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-316">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="342">
+          <caret line="97" column="18" lean-forward="true" selection-start-line="97" selection-start-column="18" selection-end-line="97" selection-end-column="18" />
+          <folding>
+            <element signature="e#14#224#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

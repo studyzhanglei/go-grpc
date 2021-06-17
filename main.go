@@ -153,7 +153,7 @@ func test7() {
 
 	v := viper.New()
 
-	v.AddRemoteProvider("consul", "127.0.0.1:8500", "test")
+	v.AddRemoteProvider("consul", "127.0.0.1:8500", "go")
 	v.SetConfigType("json") // Need to explicitly set this to json
 	if err := v.ReadRemoteConfig(); err == nil {
 		fmt.Println(v.AllSettings())

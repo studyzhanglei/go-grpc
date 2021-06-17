@@ -3,13 +3,13 @@ package test
 import (
 	"content-grpc/global"
 	"content-grpc/model"
-	"content-grpc/pb/search"
 	"content-grpc/utils/errors"
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/studyzhanglei/grpc-proto/pb/search"
+	"github.com/studyzhanglei/grpc-proto/pb/exception"
 	"google.golang.org/grpc"
-	grpcError "content-grpc/pb/error"
 )
 
 func Init(g *grpc.Server) {
@@ -27,6 +27,7 @@ func (s *SearchServiceServer) Search(srv search.SearchService_SearchServer) erro
 		return err
 	}
 
+
 	ctx := context.Background()
 
 	header, _ := json.Marshal(request.Header)
@@ -40,7 +41,7 @@ func (s *SearchServiceServer) Search(srv search.SearchService_SearchServer) erro
 	err = global.DB.Where("name = ?", request.Request).First(&user).Error
 
 	if err != nil {
-		err = errors.NewFromCode(grpcError.SearchError_SEARCH_FAILED)
+		err = errors.NewFromCode(exception.SearchError_SEARCH_FAILED)
 
 		err = srv.Send(&search.SearchResponse{
 			Status: errors.GetResHeader(err),
@@ -69,4 +70,32 @@ func (s *SearchServiceServer) Search(srv search.SearchService_SearchServer) erro
 	}
 
 	return nil
+}
+
+
+func (s *SearchServiceServer) GetUserInfo(srv search.SearchService_GetUserInfoServer) error {
+	request, err := srv.Recv()
+	if err != nil {
+		global.LOG.Info(err.Error())
+		return err
+	}
+
+
+	global.LOG.Info(fmt.Sprintf("recive：%s", request))
+
+
+	var user model.A
+	err = global.DB.Where("id = ?", request.Uid).First(&user).Error
+
+	if err != nil {
+		return err
+	}
+
+	err = srv.Send(&search.UserInfoResponse{
+		Status: errors.GetResHeader(err),
+		Username: user.Name,
+		Ud: uint64(user.ID),
+	})
+
+	return err
 }

@@ -20,6 +20,7 @@ require (
 	github.com/go-openapi/swag v0.19.8 // indirect
 	github.com/go-playground/validator/v10 v10.3.0 // indirect
 	github.com/go-redis/redis/v8 v8.9.0
+    github.com/studyzhanglei/grpc-proto  v0.0.3
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/golang/protobuf v1.4.2
 	github.com/gomodule/redigo v1.8.4

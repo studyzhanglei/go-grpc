@@ -1,7 +1,7 @@
 package errors
 
 import (
-	"content-grpc/pb/common"
+	"github.com/studyzhanglei/grpc-proto/pb/common"
 	"google.golang.org/grpc/codes"
 	"reflect"
 	"runtime"
